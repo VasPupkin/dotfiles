@@ -1,0 +1,5 @@
+set smooth-scroll "true"
+set adjust-open "width"
+set default-bg "#0c0c0c"
+set selection-clipboard clipboard
+
