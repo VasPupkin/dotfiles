@@ -1,2 +1,2 @@
 # dotfiles
-Some configuratrion files from scratch or not
+Some configuration files from scratch or not
