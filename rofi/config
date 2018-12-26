@@ -1,9 +1,10 @@
 ! "Enabled modi" Set from: Default
-rofi.modi:				  window,run,FB:~/.config/rofi/rofi-file-browser.sh,POWER:~/.config/rofi/user-menu.sh 
+rofi.modi:				  window,run,FB:~/.config/rofi/rofi-file-browser.sh,POWER:~/.config/rofi/power-menu.sh
 ! "Window width" Set from: Default
-rofi.width:			         35	 
+! rofi.width:			         35	 
+rofi.width:                          50
 ! "Number of lines" Set from: Default
-rofi.lines:	    	                 5
+rofi.lines:                          5
 ! "Number of columns" Set from: Default
 ! rofi.columns:                        1
 ! "Font to use" Set from: Default
@@ -95,7 +96,7 @@ rofi.lines:	    	                 5
 ! "Background to use for fake transparency. (background or screenshot)" Set from: Default
 ! rofi.fake-background:                screenshot
 ! "Window Format. w (desktop name), t (title), n (name), r (role), c (class) *DEPRECATED*" Set from: Default
-! rofi.window-format:                  {w}    {i}{c}   {t}
+rofi.window-format:                  {w} {i}{c} {t}
 ! "Click outside the window to exit" Set from: Default
 ! rofi.click-to-exit:                  true
 ! "Indicate how it match by underlining it." Set from: Default
