@@ -1,6 +1,7 @@
 ! "Enabled modi" Set from: Default
 rofi.modi:				  window,run,FB:~/.config/rofi/rofi-file-browser.sh,POWER:~/.config/rofi/power-menu.sh
 ! "Window width" Set from: Default
+! rofi.width:			         35	 
 rofi.width:                          50
 ! "Number of lines" Set from: Default
 rofi.lines:                          5
@@ -101,7 +102,7 @@ rofi.window-format:                  {w} {i}{c} {t}
 ! "Indicate how it match by underlining it." Set from: Default
 ! rofi.show-match:                     true
 ! "New style theme file" Set from: Default
-rofi.theme:			~/.config/rofi/theme
+rofi.theme:                          ~/.config/rofi/theme
 ! "Color scheme for normal row" Set from: Default
 ! rofi.color-normal:                   
 ! "Color scheme for urgent row" Set from: Default

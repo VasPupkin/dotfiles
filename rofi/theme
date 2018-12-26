@@ -1,6 +1,7 @@
 /**
-  * Rofi version: 1.5.1 theme file for awesome colors
-**/
+ * Rofi version: 1.5.1 theme file for awesome theme
+ * (zenburn)
+ **/
 * {
     selected-normal-foreground:  @lightbg;
     foreground:                  #DCDCCC;
