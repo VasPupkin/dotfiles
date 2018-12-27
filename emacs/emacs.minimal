@@ -1,0 +1,51 @@
+(require 'package)
+(setq package-enable-at-startup nil)
+(setq package-archives '(("gnu"   . "http://elpa.gnu.org/packages/")
+                         ("melpa-stable" . "https://stable.melpa.org/packages/")))
+(package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
+
+(add-to-list 'load-path "~/.emacs.d/plugin")
+
+(scroll-bar-mode -1)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(setq inhibit-splash-screen   t)
+(setq ingibit-startup-message t)
+(setq initial-scratch-message nil)
+
+
+(when (not (file-directory-p "~/.emacs-backup"))
+  (make-directory "~/.emacs-backup"))
+(if (file-directory-p "~/.emacs-backup")
+    (setq backup-directory-alist '(("." . "~/.emacs-backup"))))
+(setq auto-save-default nil) ; Don't want any auto saving
+(setq delete-old-versions t ; delete old version
+      kept-old-versions 9 ; number for oldest version
+      version-control t)
+
+(setq savehist-file "~/.emacs.d/savehist")
+(savehist-mode 1)
+(setq history-length t)
+(setq history-delete-duplicates t)
+(setq savehist-save-minibuffer-history 1)
+(setq savehist-additional-variables
+      '(kill-ring
+        search-ring
+        regexp-search-ring))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (lua-mode use-package))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
