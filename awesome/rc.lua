@@ -1,4 +1,4 @@
--- configuration for awesom 4.+ (lua 5.3)
+-- configuration for awesome 4.+ (lua 5.3)
 
 --------------------------------------------------------------------------------
 
